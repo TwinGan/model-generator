@@ -1,0 +1,24 @@
+# High Frequency Trading scenario
+name: high_frequency_trading
+description: Rapid order entry and management scenario
+
+# Emphasize order entry and management
+weights:
+  groups:
+    OrderEntry: 60
+    OrderManagement: 35
+    MarketData: 5
+    RiskManagement: 0
+    Admin: 0
+
+# Favor positive testing for speed
+parameter_strategies:
+  positive_weight: 95
+  negative_weight: 5
+  boundary_priority: 15
+
+# Execution settings
+execution:
+  max_steps: 50000
+  stop_on_error: false
+  max_retries: 10

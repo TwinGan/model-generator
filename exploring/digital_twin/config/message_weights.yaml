@@ -1,0 +1,42 @@
+# Default message weights configuration
+# Groups and messages within groups use weighted random selection
+
+groups:
+  OrderEntry:
+    weight: 40
+    messages:
+      NewOrderSingle: 50
+      NewOrderCross: 20
+      NewOrderMultileg: 30
+
+  OrderManagement:
+    weight: 30
+    messages:
+      OrderCancelRequest: 40
+      OrderModifyRequest: 35
+      OrderMassCancel: 25
+
+  MarketData:
+    weight: 10
+    messages:
+      MarketDataRequest: 60
+      MarketDataSnapshot: 40
+
+  RiskManagement:
+    weight: 15
+    messages:
+      RiskLimitCheck: 50
+      PositionQuery: 50
+
+  Admin:
+    weight: 5
+    messages:
+      UserRequest: 50
+      SymbolStatusRequest: 50
+
+# Default parameter strategies
+parameter_strategies:
+  default:
+    positive_weight: 80
+    negative_weight: 20
+    boundary_priority: 30

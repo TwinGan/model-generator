@@ -1,0 +1,15 @@
+I'm in the process of exploring the solution for a testing which implements the testing methology of "software tests software". The software supports the following functionalities: 
+1. dynamically generate testcases at large volume and, the testcase generation needs to be stateful, meaning the subsequent new steps need to be relevant or based on previous test steps. 
+2. predict the returning result for the testcases generated from the previous testcase generation step. 
+
+The resulting software is also called digital twin, which basically mimic the operation of orders according to the requirement. We'll use the term in subsequent conversations. 
+
+To support the state management, we need to synchronize the state between the SUT system and the digital twin at the start of the execution. Ever since the state will be separated updated and NOT synchronized anymore. 
+This assumes the SUT system do not have OTHER users to update the states other than the digital twin. 
+
+The goal is to using GenAI as the key tool to dynamically generate the software based on a given set of specification pertain to the target software to be tested. 
+Please help me explore some options to generate the eventual testing software (or digital twin). 
+
+Some ground rules:
+1. If you are unsure about anything, please keep the questions & collect them to the last, I'll answer them in one-go. I can also minimize the interaction. 
+2. If you need to run any python script, please use the virtual environment at: /Users/evan/magentic-ui/ag2/venv

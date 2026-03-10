@@ -1,0 +1,24 @@
+# Default scenario configuration
+name: default
+description: Default test scenario with balanced message weights
+
+# Message weights (inherits from message_weights.yaml if not specified)
+weights:
+  groups:
+    OrderEntry: 40
+    OrderManagement: 30
+    MarketData: 10
+    RiskManagement: 15
+    Admin: 5
+
+# Parameter generation strategies
+parameter_strategies:
+  positive_weight: 80
+  negative_weight: 20
+  boundary_priority: 30
+
+# Execution settings
+execution:
+  max_steps: 10000
+  stop_on_error: false
+  max_retries: 10

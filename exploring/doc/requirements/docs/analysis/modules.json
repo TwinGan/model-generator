@@ -1,0 +1,128 @@
+{
+  "session-management": {
+    "name": "Session Management",
+    "description": "FIX session establishment, authentication, and lifecycle management",
+    "capabilities": [
+      {
+        "source": "Order Entry Gateway FIX Specification v 1 9 1.md",
+        "capability": "FIX Session Establishment and Authentication",
+        "description": "Logon, authentication, password management, session termination"
+      },
+      {
+        "source": "Binary Order Entry Specification v1 9  1.md",
+        "capability": "FIX Session Establishment and Authentication",
+        "description": "Logon, authentication, password management, session termination"
+      }
+    ]
+  },
+  "order-management": {
+    "name": "Order Management",
+    "description": "Order submission, modification, cancellation, and status tracking",
+    "capabilities": [
+      {
+        "source": "Order Entry Gateway FIX Specification v 1 9 1.md",
+        "capability": "Order Type Support",
+        "description": "Market, Limit, Stop, Stop-Limit, Iceberg, Fill-or-Kill, Good-for-Day, Good-Till-Cancel, Good-Till-Date"
+      },
+      {
+        "source": "Order Entry Gateway FIX Specification v 1 9 1.md",
+        "capability": "Order Submission",
+        "description": "New order placement with validation"
+      },
+      {
+        "source": "Order Entry Gateway FIX Specification v 1 9 1.md",
+        "capability": "Order Modification and Cancellation",
+        "description": "Amend order parameters, cancel orders, mass cancellation"
+      },
+      {
+        "source": "Binary Order Entry Specification v1 9  1.md",
+        "capability": "Order Type Support",
+        "description": "Market, Limit, Stop, Stop-Limit, Iceberg, Fill-or-Kill, Good-for-Day, Good-Till-Cancel, Good-Till-Date"
+      },
+      {
+        "source": "Binary Order Entry Specification v1 9  1.md",
+        "capability": "Order Submission",
+        "description": "New order placement with validation"
+      },
+      {
+        "source": "Binary Order Entry Specification v1 9  1.md",
+        "capability": "Order Modification and Cancellation",
+        "description": "Amend order parameters, cancel orders, mass cancellation"
+      }
+    ]
+  },
+  "risk-management": {
+    "name": "Risk Management",
+    "description": "Pre-trade risk controls, limits, and compliance checking",
+    "capabilities": [
+      {
+        "source": "Risk Management Gateway FIX Specification v1 8.md",
+        "capability": "Pre-Trade Risk Limits",
+        "description": "Per order quantity, notional value, gross position limits"
+      },
+      {
+        "source": "Risk Management Gateway FIX Specification v1 8.md",
+        "capability": "Risk Group Management",
+        "description": "User role-based risk controls, view-only access"
+      }
+    ]
+  },
+  "matching-engine": {
+    "name": "Matching Engine",
+    "description": "Order matching, price validation, and trade execution rules",
+    "capabilities": [
+      {
+        "source": "LME Matching Rules August 2022.md",
+        "capability": "Price Validation",
+        "description": "Pre-execution price checks, failed check handling"
+      },
+      {
+        "source": "LME Matching Rules August 2022.md",
+        "capability": "Trading Hours and Deadlines",
+        "description": "Session schedules, TOM deadlines, trade input deadlines"
+      },
+      {
+        "source": "LME Matching Rules August 2022.md",
+        "capability": "Order Matching Logic",
+        "description": "Price-time priority, trade reporting, execution rules"
+      }
+    ]
+  },
+  "reliability": {
+    "name": "Reliability & Recovery",
+    "description": "Message recovery, gap fill, and fault tolerance mechanisms",
+    "capabilities": [
+      {
+        "source": "Order Entry Gateway FIX Specification v 1 9 1.md",
+        "capability": "Message Recovery",
+        "description": "Gap fill, resend requests, duplicate detection"
+      },
+      {
+        "source": "Binary Order Entry Specification v1 9  1.md",
+        "capability": "Message Recovery",
+        "description": "Gap fill, resend requests, duplicate detection"
+      }
+    ]
+  },
+  "connectivity": {
+    "name": "Connectivity",
+    "description": "Protocol support (FIX and Binary) and message formats",
+    "capabilities": []
+  },
+  "examples": {
+    "name": "Message Examples",
+    "description": "Sample messages and usage examples for all protocols",
+    "capabilities": [
+      {
+        "source": "LMEselect v10  FIX and BINARY Message Examples v10.md",
+        "capability": "FIX Message Examples",
+        "description": "Sample FIX messages for all order types and scenarios"
+      },
+      {
+        "source": "LMEselect v10  FIX and BINARY Message Examples v10.md",
+        "capability": "Binary Message Examples",
+        "description": "Sample binary messages for all order types and scenarios"
+      }
+    ]
+  }
+}

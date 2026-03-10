@@ -1,0 +1,21 @@
+I'm trying to standardize the requirements for LME options trading exchange. The raw specification has been provided in the folder named "raw". 
+There are 5 files: 
+1. "Binary Order Entry Specification v1 9  1.pdf": this is the binary order entry specification, which is propriertary interface for LME. 
+2. "Order Entry Gateway FIX Specification v 1 9 1.pdf": this is the FIX 5.0 based order entry specification. 
+3. "Risk Management Gateway FIX Specification v1 8.pdf": this is the risk management interface based on FIX 5.0. 
+4. "LME Matching Rules August 2022.pdf": this is the underlying matching rules for orders. 
+5. "LMEselect v10  FIX and BINARY Message Examples v10.pdf": this is the example files based on FIX and BIN protocol. 
+
+Your tasks are: 
+1. convert the pdf files into MD format for easier understanding and processing. 
+2. classify and group the required capabilities into modules and managing them in a self-contained manner. 
+3. based on the industry best practices from testing perspective, enrich the document as appropriate
+4. extract the messages for order entry (in FIX and Binary), and risk management and create an individual file for each message type which includes the details, like the message specification, the processing rules, the resulting messages, and make sure the message is self-contained with the full information. 
+5. please verify the result before you mark it as finished, the key information to validate include the following: 
+5.1 all the messages are captured and saved to an individual file
+5.2 each message file is self-contained, including: message interaction flow, message specification, examples. 
+
+Some context & ground rules:
+1. The purpose of the activity is trying to feed to a testing environment creation. 
+2. The please use virtual environment defined at /Users/evan/magentic-ui/ag2/venv for python script execution. 
+3. Please focus on the functional requirements only
