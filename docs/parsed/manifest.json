@@ -1,0 +1,13 @@
+[
+  {
+    "source_path": "/Users/twingan/model-generator/docs/raw/LMESelect 93 FIX Specification v11.pdf",
+    "output_markdown_path": "/Users/twingan/model-generator/docs/parsed/LMESelect_93_FIX_Specification_v11.md",
+    "output_json_path": "/Users/twingan/model-generator/docs/parsed/LMESelect_93_FIX_Specification_v11.json",
+    "status": "success",
+    "error": null,
+    "meta": {
+      "filename": "LMESelect 93 FIX Specification v11.pdf",
+      "suffix": ".pdf"
+    }
+  }
+]
