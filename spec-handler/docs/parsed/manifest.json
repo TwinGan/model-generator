@@ -1,0 +1,13 @@
+[
+  {
+    "source_path": "/Users/twingan/Desktop/lme-option/spec-handler/docs/raw/LME Matching Rules August 2022.pdf",
+    "output_markdown_path": "/Users/twingan/Desktop/lme-option/spec-handler/docs/parsed/LME_Matching_Rules_August_2022.md",
+    "output_json_path": "/Users/twingan/Desktop/lme-option/spec-handler/docs/parsed/LME_Matching_Rules_August_2022.json",
+    "status": "success",
+    "error": null,
+    "meta": {
+      "filename": "LME Matching Rules August 2022.pdf",
+      "suffix": ".pdf"
+    }
+  }
+]
