@@ -7,14 +7,15 @@ Generate the `orderbook` module for the simplified options matching model.
 Before coding, read:
 - `AGENTS.md`
 - `inputs/reference_data/orderbook.json`
-- `inputs/generated_files.md`
-- python files recorded in `inputs/generated_files.md`
+- `inputs/rules/orderbook_rules.md`
+- `docs/generated_files.md`
+- python files recorded in `docs/generated_files.md`
 
 ## Scope
 Implement only the order book module.
 
 Expected responsibilities:
-- initial the orderbook with `inputs/reference_data/orderbook.json`
+- initial the orderbook with data file like `inputs/reference_data/orderbook.json`
 - maintain bid and ask books
 - preserve price-time priority at the book level
 - add a resting order
@@ -35,7 +36,7 @@ Create or update only:
 - `src/model/engine/orderbook.py`
 - related small helper files if truly necessary
 - `tests/test_orderbook.py`
-- add all generated code file *address* and *desciption* to `prompts/generated_files.md`
+- add all generated code file *address* and *desciption* to `docs/generated_files.md`
 
 ## Constraints
 - Do not duplicate order or trade definitions
